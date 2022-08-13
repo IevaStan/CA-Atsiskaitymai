@@ -87,9 +87,16 @@ header {
 }
 
 .menu li {
-  margin: 0 1rem;
   overflow: hidden;
   color: #797878;
+  padding: 1rem;
+}
+
+.menu li:hover {
+  font-weight: bold;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .menu li:last-child {
@@ -141,8 +148,8 @@ header {
 
 .signup button {
   border: solid 3.5px transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
-  background-image: linear-gradient(white, white), linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
+  background-image: linear-gradient(white, white), linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169);
   background-origin: border-box;
   background-clip: content-box, border-box;
   -webkit-box-shadow: 2px 1000px 1px #fff inset;
@@ -155,8 +162,8 @@ header {
   font-weight: bold;
   -webkit-box-shadow: 0px 0px 0px #fff inset;
           box-shadow: 0px 0px 0px #fff inset;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169)), -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
-  background-image: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169), linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169)), -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
+  background-image: linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169), linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169);
   cursor: pointer;
 }
 
@@ -236,8 +243,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: carousel 5s linear 0s infinite normal;
-          animation: carousel 5s linear 0s infinite normal;
+  -webkit-animation: carousel 10s linear 0s infinite normal;
+          animation: carousel 10s linear 0s infinite normal;
   width: 1800px;
 }
 
@@ -312,11 +319,12 @@ header {
 
 .shop .sales .card .description .image-text .series {
   color: #fb8518;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .shop .sales .card .description .image-text .topbid {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  color: #797878;
 }
 
 .shop .sales .card .description .name-price {
@@ -350,8 +358,26 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #2e4d4d;
   font-size: 0.9rem;
+}
+
+.shop .sales .card .description .details p {
+  color: #797878;
+}
+
+.shop .sales .card:hover {
+  border-radius: 15px;
+  -webkit-box-shadow: 20px 15px 10px -15px #cac8c8;
+          box-shadow: 20px 15px 10px -15px #cac8c8;
+}
+
+.shop .sales .card:hover .description {
+  background-color: #797878;
+}
+
+.shop .sales .card:hover .description p,
+.shop .sales .card:hover .description .topbid {
+  color: #ebebeb;
 }
 
 footer {
@@ -385,6 +411,10 @@ footer .social-media-icons {
 footer .social-media-icons a {
   color: #cac8c8;
   padding-right: 20px;
+}
+
+footer .social-media-icons a:hover {
+  color: #797878;
 }
 
 footer .footer-header,
@@ -466,6 +496,9 @@ footer h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
